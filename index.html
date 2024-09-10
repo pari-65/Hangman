@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="hangman-drawing">
+        <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+      </div>
+      <div class="title">
+        <button id="wordGameBtn">Word Game</button>
+        <h1 id="hangmanTitle">HANGMAN</h1>
+      </div>
+    </div>
+    <div class="wordDisplay">
+      <p id="wordToGuess">_ _ _ _ _ _</p>
+    </div>
+    <div class="alphabet">
+      <div class="letters">
+        <button onclick="guessLetter('A')">A</button>
+      <button onclick="guessLetter('B')">B</button>
+      <button onclick="guessLetter('C')">C</button>
+      <button onclick="guessLetter('D')">D</button>
+      <button onclick="guessLetter('E')">E</button>
+      <button onclick="guessLetter('F')">F</button>
+      <button onclick="guessLetter('G')">G</button>
+      <button onclick="guessLetter('H')">H</button>
+      <button onclick="guessLetter('I')">I</button>
+      <button onclick="guessLetter('J')">J</button>
+      <button onclick="guessLetter('K')">K</button>
+      <button onclick="guessLetter('L')">L</button>
+      <button onclick="guessLetter('M')">M</button>
+      <button onclick="guessLetter('N')">N</button>
+      <button onclick="guessLetter('O')">O</button>
+      <button onclick="guessLetter('P')">P</button>
+      <button onclick="guessLetter('Q')">Q</button>
+      <button onclick="guessLetter('R')">R</button>
+      <button onclick="guessLetter('S')">S</button>
+      <button onclick="guessLetter('T')">T</button> 
+      <button onclick="guessLetter('U')">U</button>
+      <button onclick="guessLetter('V')">V</button>
+      <button onclick="guessLetter('W')">W</button>
+      <button onclick="guessLetter('X')">X</button>
+      <button onclick="guessLetter('Y')">Y</button>
+      <button onclick="guessLetter('Z')">Z</button>
+        <!-- Dynamically add buttons for letters A-Z -->
+      </div>
+    </div>
+    <div id="gameMessage"></div>
+    <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
